@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    /* background: red;  */
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-flow: column;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header i {
+    color: #999999;
+    letter-spacing: 20px;
+}
+
+.menu {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: repeat(auto-fit,500px); */
+    grid-auto-flow: column;
+    list-style: none;
+    gap: 30px;
+    color: white;
+}
+
+.menu a {
+    color: #D7AAA9;
+    font-size: 15px;
+}
+
+.headerFull {
+    width: 100%;
+    height: 789px;
+    background-image: url(../img/background-imf.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #D7AAA9;
+}
+
+.images {
+    width: 100%;
+    height: 490px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 80px;
+}
+
+
+.images div {
+    position: relative;
+
+}
+
+.images button {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 153px;
+    height: 43px;
+    border: none;
+    color: #4B6635;
+    background-color: #D7AAA9;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.blog {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+
+.blogTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+}
+
+.post {
+    position: relative;
+
+}
+
+.post {
+    position: relative;
+    color: white;
+}
+
+.textTop {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.textDown {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+}
+
+.iconDiv {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.iconDiv span {
+    margin-right: 20px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.postBotton {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.postBotton button {
+    width: 152px;
+    height: 46px;
+    border: none;
+    background-color: #D7AAAA;
+    color: #4B6635;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.postBotton button:hover {
+    color: #D7AAAA;
+    background-color: #4B6635;
+}
+
+
+.about {
+    width: 100%;
+    height: 410px;
+    background-color: #F5D8D7;
+    padding: 60px 0px;
+}
+
+
+
+.about p {
+    margin-top: 40px;
+}
+
+.about hr {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #4B6635;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.about div {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    color: #4B6635;
+    margin: 0px auto;
+}
+
+.about button {
+    width: 152px;
+    height: 43px;
+    background-color: #4B6635;
+    color: #D7AAAA;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.about button:hover {
+    color: #4B6635;
+    background-color: #D7AAAA;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+
+
+
+
+
+
+.container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0000004d;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 312px;
+    background: #ffffff;
+    display: grid;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #597344;
+}
+
+.icon {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.icon i {
+    font-size: 15px;
+
+    margin: 40px 10px;
+    color: #999999;
+}
+
+.footerDiv {
+    width: 500px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+}
+
+footer div p {
+    color: #597344;
+    text-align: left;
+}
+
+footer div input {
+    width: 343px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #597344;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+footer div input:hover {
+    border-bottom: 4px solid #597344;
+}
+
+footer div button {
+    width: 106px;
+    height: 34px;
+    background-color: #597344;
+    border: none;
+    color: #D7AAA9;
+    transition: 0.5s;
+}
+
+footer div button:hover {
+    background-color: #D7AAA9;
+    color: #597344;
+}
+
+
+
+
+.chat {
+    width: 190px;
+    height: 50px;
+    color: #4B6635;
+    background-color: #D7AAA9;
+    border: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.chat a {
+    font-size: 20px;
+    color: #4B6635;
+}
+
+@media screen and (max-width: 480px) {
+    .headerFull {
+       padding: 70px 0px;
+     
+    }
+
+    header{
+        grid-auto-flow: row;
+        justify-content: center;
+        text-align: center;
+    }
+ 
+
+    .images {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .images img {
+        width: 280px;
+    }
+
+    .blogTop {
+        grid-template-columns: none;
+    }
+
+    .about div {
+        width: 100%;
+        height: auto;
+    }
+
+    .about div:nth-child(1) p {
+        text-align: center;
+    }
+
+    .about button {
+        margin-top: 30px;
+    }
+}
